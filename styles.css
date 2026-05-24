@@ -1,0 +1,169 @@
+:root {
+  color-scheme: dark;
+  color: #0f172a;
+  background: #f8fafc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.site-header {
+  padding: 36px 0 24px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  letter-spacing: -0.04em;
+}
+
+.subtitle {
+  margin: 12px 0 0;
+  color: #475569;
+  max-width: 520px;
+  line-height: 1.7;
+}
+
+.top-nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.top-nav a {
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.section {
+  padding: 64px 0;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.section-number {
+  margin: 0;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.section h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.cards {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card,
+.content-block,
+.contact-card {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.05);
+}
+
+.card h3,
+.content-block h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 1.15rem;
+}
+
+.card p,
+.content-block p,
+.contact-card p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.content-block + .content-block {
+  margin-top: 18px;
+}
+
+.skills-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.skills-grid span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 16px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 14px;
+  color: #0f172a;
+  background: #f8fafc;
+  font-weight: 600;
+}
+
+.contact-section .contact-card {
+  display: grid;
+  gap: 12px;
+}
+
+.site-footer {
+  padding: 28px 0;
+  text-align: center;
+  color: #94a3b8;
+}
+
+@media (max-width: 760px) {
+  .header-inner,
+  .top-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-nav {
+    width: 100%;
+  }
+}
